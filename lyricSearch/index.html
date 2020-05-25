@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/united/bootstrap.min.css">
+    <title>Lyric search</title>
+    <style>
+        .alignImg {
+            background-image: url('./Images/img1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron-fluid alignImg">
+        <h1 class="text-center" style="color: whitesmoke;">Search lyric</h1>
+        <br>
+        <form id="form">
+            <div class="form-group ">
+                <label for="search">Search Lyric by Artist name or Song name</label>
+                <div class="form-inline">
+                    <input type="text" class="form-control" style="width: 450px;" placeholder="Enter...." id="search" aria-describedby="searchLyric">&ensp;
+                    <button type="submit" class="btn btn-primary float-md-right">Search</button>
+                </div>
+            </div>
+        </form>
+        <div id="error"></div>
+    </div>
+
+    <h2 id="lyricHeader" class="text-center mt-2" style="width: 100%;"></h2>
+    <div id="results" class="container mt-3 form-inline">
+        <!--
+        <div class="card border-primary bg-light m-2" style="width: 30%;height: 150px;">
+            <div class="card-body text-center">
+                <p class="card-text"><strong>Eminem</strong><br>Lose Yourself (From \"8 Mile\" Soundtrack)</p>
+                <button class="btn btn-primary">Get Lyric</button>
+            </div>
+        </div>
+        <div class="card border-primary bg-light m-2" style="width: 30%;height: 150px;">
+            <div class="card-body text-center">
+                <p class="card-text"><strong>Eminem</strong><br>Yourself </p>
+                <button class="btn btn-primary">Get Lyric</button>
+            </div>
+        </div>
+        <div class="card border-primary bg-light m-2" style="width: 30%;height: 150px;">
+            <div class="card-body text-center">
+                <p class="card-text"><strong>Eminem</strong><br>Lose Yourself (From</p>
+                <button class="btn btn-primary">Get Lyric</button>
+            </div>
+        </div>
+        -->
+
+    </div>
+
+    <div id="more" class="container center">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
